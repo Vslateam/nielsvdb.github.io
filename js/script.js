@@ -1,0 +1,1 @@
+// JavaScript optionnel pour le menu ou animations
