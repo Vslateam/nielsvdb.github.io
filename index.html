@@ -1,29 +1,260 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Van den Brande Niels - Potfolio</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Niels Van den Brande</div>
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#experiences">Expériences</a></li>
-        <li><a href="#education">Formations</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#activities">Activités</a></li>
-        <li><a href="#contact">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="about" class="section"><h2>À propos</h2></section>
-    <section id="experiences" class="section"><h2>Expériences</h2></section>
-    <section id="education" class="section"><h2>Formations</h2></section>
-    <section id="projects" class="section"><h2>Projets</h2></section>
-    <section id="cv" class="section"><h2>CV</h2><a href="cv/CV-UTC-NielsVdB.pdf" download>Télécharger mon CV (PDF)</a></section>
-    <section id="activities" class="section"><h2>Activités</h2></section>
-    <section id="contact" class="section"><h2>Contacts</h2></section>
+  <main class="content">
+    <section id="about" class="section">
+      <h2>À propos de moi</h2>
+      <div class="container bg-transparent">
+        <div class="row justify-content-center align-items-center px-3 py-5">
+
+          <!-- Photo -->
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="/assets/images/moi.jpg"
+                class="img-thumbnail mx-auto rounded-circle profil-photo"
+                alt="Photo de profil"
+                style="max-width: 180px;">
+          </div>
+
+          <!-- Description -->
+          <div class="col-md-8">
+            <p>
+              Passioné par le génie logiciel, j'aime créer et développer des logiciels, tout particulièrement lorsque cela se mèle au secteur de l'aéronautique et de l'automobile.
+              J'aime également intégrer et mettre ne place des modèles d'IA. 
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Compétences -->
+        <div class="row justify-content-center text-center mt-4">
+          <h3>Technologies utilisées</h3>
+          <div class="skills d-flex flex-wrap justify-content-center gap-4 mt-3">
+            <div class="skill" title="HTML5">
+              <img src="/assets/logos/html5.svg" alt="HTML5">
+              <div class="custom-tooltip">
+                <strong>HTML</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+            <div class="skill" title="CSS">
+              <img src="/assets/logos/html5.svg" alt="CSS">
+              <div class="custom-tooltip">
+                <strong>CSS</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+            <div class="skill" title="CSS">
+              <img src="/assets/logos/html5.svg" alt="CSS">
+              <div class="custom-tooltip">
+                <strong>CSS</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+            <div class="skill" title="CSS">
+              <img src="/assets/logos/html5.svg" alt="CSS">
+              <div class="custom-tooltip">
+                <strong>CSS</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+            <div class="skill" title="CSS">
+              <img src="/assets/logos/html5.svg" alt="CSS">
+              <div class="custom-tooltip">
+                <strong>CSS</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+            <div class="skill" title="CSS">
+              <img src="/assets/logos/html5.svg" alt="CSS">
+              <div class="custom-tooltip">
+                <strong>CSS</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+            <div class="skill" title="CSS">
+              <img src="/assets/logos/html5.svg" alt="CSS">
+              <div class="custom-tooltip">
+                <strong>CSS</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+            <div class="skill" title="CSS">
+              <img src="/assets/logos/html5.svg" alt="CSS">
+              <div class="custom-tooltip">
+                <strong>CSS</strong><br>
+                Langage de structuration du web
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Expériences professionnelles</h3>
+        <div class="row justify-content-center bg-white border border-secondary rounded shadow p-4">
+          <div class="col-lg-10">
+
+            <!-- Onglets -->
+            <ul class="nav nav-pills mb-3 justify-content-center" id="experience-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"
+                        id="tab-ell"
+                        data-bs-toggle="pill"
+                        data-bs-target="#content-Ell"
+                        type="button"
+                        role="tab"
+                        aria-controls="content-Ell"
+                        aria-selected="true">
+                  Ed. Ellipses
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="tab-cci"
+                        data-bs-toggle="pill"
+                        data-bs-target="#content-CCI"
+                        type="button"
+                        role="tab"
+                        aria-controls="content-CCI"
+                        aria-selected="false">
+                  CCI
+                </button>
+              </li>
+            </ul>
+
+            <!-- Contenu des expériences -->
+            <div class="tab-content" id="experience-tabs-content">
+
+              <!-- Ellipses -->
+              <div class="tab-pane fade show active"
+                  id="content-Ell"
+                  role="tabpanel"
+                  aria-labelledby="tab-ell">
+                <h5>Software Engineer – <a href="https://example.com" target="_blank">Ellipses</a></h5>
+                <p class="text-muted">Jan 2022 – Présent</p>
+                <ul>
+                  <li>Développement d’applications à fort trafic en React et Node.js</li>
+                  <li>Optimisation des performances backend et mise en place de tests</li>
+                </ul>
+              </div>
+
+              <!-- CCI -->
+              <div class="tab-pane fade"
+                  id="content-CCI"
+                  role="tabpanel"
+                  aria-labelledby="tab-cci">
+                <h5>Software Engineer – <a href="https://example.com" target="_blank">CCI Productions</a></h5>
+                <p class="text-muted">Sep 2020 – Déc 2021</p>
+                <ul>
+                  <li>Déploiement d’API RESTful sur AWS Lambda</li>
+                  <li>Participation à l’élaboration d’UI en React</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="formation" class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-5">Formation</h3>
+
+        <div class="row justify-content-center">
+          
+          <!-- Master -->
+          <div class="col-12 p-0">
+            <div class="row align-items-center justify-content-center m-1 mb-4">
+              <div class="col-md-9">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="float-end"><small>2021 - 2023</small></div>
+                    <h5 class="card-title">Master Informatique – Développement Full Stack</h5>
+                    <a href="https://univ-exemple.fr" target="_blank">
+                      <h6>Université de Technologie de Compiègne</h6>
+                    </a>
+                    <div class="py-1">Mention :
+                      <i><small>Très bien</small></i>
+                    </div>
+                    <div class="py-1 education-content">
+                      <p>Modules principaux :</p>
+                      <ul>
+                        <li>Architecture web & cloud computing</li>
+                        <li>Développement avec React, Node.js et MongoDB</li>
+                        <li>DevOps & CI/CD (GitLab, Docker)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Licence -->
+          <div class="col-12 p-0">
+            <div class="row align-items-center justify-content-center m-1 mb-4">
+              <div class="col-md-9">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="float-end"><small>2018 - 2021</small></div>
+                    <h5 class="card-title">Licence Informatique</h5>
+                    <a href="https://universite-exemple.fr" target="_blank">
+                      <h6>Université Lille 1</h6>
+                    </a>
+                    <div class="py-1">Mention :
+                      <i><small>Bien</small></i>
+                    </div>
+                    <div class="py-1 education-content">
+                      <p>Projets notables :</p>
+                      <ul>
+                        <li>Création d’un moteur de blog en PHP MVC</li>
+                        <li>Jeu vidéo 2D en Java avec JavaFX</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bac -->
+          <div class="col-12 p-0">
+            <div class="row align-items-center justify-content-center m-1 mb-4">
+              <div class="col-md-9">
+                <div class="card shadow">
+                  <div class="card-body">
+                    <div class="float-end"><small>2018</small></div>
+                    <h5 class="card-title">Baccalauréat Scientifique – Spécialité Mathématiques</h5>
+                    <a href="https://lycee-exemple.fr" target="_blank">
+                      <h6>Lycée Faidherbe, Lille</h6>
+                    </a>
+                    <div class="py-1">Mention :
+                      <i><small>Bien</small></i>
+                    </div>
+                    <div class="py-1 education-content">
+                      <p>Participation au concours Alkindi & stage CNRS en terminale.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <script src="js/script.js"></script>

@@ -1,13 +1,15 @@
 // Injecter le header
-fetch('header.html')
+fetch('components/header.html')
   .then(res => res.text())
   .then(data => {
     document.body.insertAdjacentHTML('afterbegin', data);
   });
 
 // Injecter le footer
-fetch('footer.html')
+fetch('components/footer.html')
   .then(res => res.text())
   .then(data => {
     document.body.insertAdjacentHTML('beforeend', data);
   });
+
+
