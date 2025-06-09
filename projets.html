@@ -13,29 +13,45 @@
   <main class="container">
     <h1>Mes Projets</h1>
 
-    <section class="projects-list">
-      <!-- Projet 1 -->
-      <article class="project-card">
-        <img src="images/projet1.jpg" alt="Projet 1" class="project-image" />
-        <div class="project-content">
-          <h2>Projet NAO</h2>
-          <p>Description courte du projet, technologies utilisées, objectifs et résultats.</p>
-          <a href="https://lien-vers-le-projet1.com" target="_blank" class="btn-link">Voir le projet</a>
+    <section class="projects-list container py-4">
+    <div class="row g-4">
+        <!-- Projet 1 -->
+        <article class="project-card col-12 col-md-6">
+        <div class="ratio ratio-16x9">
+            <iframe 
+            src="https://drive.google.com/file/d/1cWqtk-KOvIBpjAPRlGKp9YpDoJVCu0-Y/preview" 
+            allow="autoplay" 
+            allowfullscreen
+            frameborder="0">
+            </iframe>
         </div>
-      </article>
-
-      <!-- Projet 2 -->
-      <article class="project-card">
-        <img src="images/projet2.jpg" alt="Projet 2" class="project-image" />
-        <div class="project-content">
-          <h2>MagiMatic</h2>
-          <p>Description courte du projet, technologies utilisées, objectifs et résultats.</p>
-          <a href="https://lien-vers-le-projet2.com" target="_blank" class="btn-link">Voir le projet</a>
+        <div class="project-content mt-3">
+            <h2>Projet NAO</h2>
+            <lu>
+                <li>Développement (Python) d’un robot pour qu’il soit capable de jouer aux échecs contre un adversaire.</li>
+                <li>Gestion d’équipe de 10 pers. en tant que chef de projet. Utilisation de la méthode SCRUM</li>
+                <li>Mise en place de la détection de mouvement adversaire à l’aide d’Opencv </li>
+            </lu>
         </div>
-      </article>
+        </article>
 
-      <!-- Ajoute autant de projets que tu veux -->
+        <!-- Projet 2 -->
+        <article class="project-card col-12 col-md-6">
+        <img src="assets/icons/MagiMatic.PNG" alt="MagiMatic" class="img-fluid rounded" />
+        <div class="project-content mt-3">
+            <h2>MagiMatic</h2>
+            <lu>
+                <li>Développement d'un jeu 3D avec Unity.</li>
+                <li>Jeu éducatif appliquant des méthodes d'apprentissages des mathématiques.</li>
+                <li>Utilisation de la méthode Scrum pour une équipe projet de 3 personnes.</li>
+            </lu>
+        </div>
+        </article>
+
+        <!-- Ajoute autant de projets que tu veux -->
+    </div>
     </section>
+
   </main>
 
   <script src="js/script.js"></script>
